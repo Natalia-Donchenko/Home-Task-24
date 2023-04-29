@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+
+  background-color: rgb(169, 175, 179);
+
+  .container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+
+    background-color: rgb(60, 63, 65);
+    border-radius: 12px;
+
+    .total-title {
+      color: rgb(33, 180, 168);
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .usersForm {
+      display: flex;
+      flex-direction: column;
+
+      .textLabel {
+        margin: 10px 0 5px;
+
+        color: rgba(255, 255, 255, 0.521);
+      }
+
+      .errorLabel {
+        color: rgba(250, 113, 113, 0.753);
+      }
+
+      .textInput {
+        display: flex;
+        
+        padding: 5px;
+
+        color: rgba(255, 255, 255, 0.774);
+
+        background-color: transparent;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .errorInput {
+        background-color: rgba(255, 0, 0, 0.13);
+      }
+
+      .touch {
+        background-color: blue;
+      }
+ 
+      .btn-submit {
+        min-width: max-content;
+        margin-top: 10px;
+        padding: 5px;
+
+        color: rgb(60, 63, 65);
+        font-weight: bold;
+
+        background-color: rgb(33, 180, 168);
+        border: none;
+        border-radius: 12px;
+        text-transform: uppercase;
+        transition: all 0.3s linear;
+
+        
+        &:hover {
+          background-color:rgb(38, 206, 192);
+
+          cursor: pointer;
+        }
+      }
+      
+    }
+
+    .error {
+      margin: 5px 0;
+      font-size: 10px;
+      color: rgba(250, 113, 113, 0.568);
+    }
+  }
+  
+}
