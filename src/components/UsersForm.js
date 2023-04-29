@@ -1,7 +1,7 @@
-import { Formik, Form, useField } from 'formik';
-import * as Yup from 'yup';
-import TextInput from './TextInput';
-import SubmitBtn from './btns/SubmitBtn';
+import { Formik, Form, useField } from "formik";
+import * as Yup from "yup";
+import TextInput from "./TextInput";
+import SubmitBtn from "./btns/SubmitBtn";
 
 const UsersForm = () => {
   return (
@@ -13,10 +13,10 @@ const UsersForm = () => {
       }}
       validationSchema={Yup.object({
         firstName: Yup.string()
-          .max(15, 'Maximum number of characters 15')
+          .max(15, "Maximum number of characters 15")
           .required("Required field"),
         email: Yup.string()
-          .email('Invalid email address')  
+          .email("Invalid email address")  
           .required("Required field"),
         phoneNumber: Yup.string()
           .matches(/^\+380([0-9][0-9])[0-9]{7}/gm, "Invalid phone number. Expected: +380(operator's code)(phone number)")
@@ -34,9 +34,9 @@ const UsersForm = () => {
       }
     }
     >
-      <div className='container'>
-        <h1 className='total-title'>Form of registration</h1>
-        <Form className='usersForm'>
+      <div className="container">
+        <h1 className="total-title">Form of registration</h1>
+        <Form className="usersForm">
           <TextInput 
             label="First name:"
             name="firstName"

@@ -1,7 +1,7 @@
 const SubmitBtn = () => {
   return (
     <button 
-      className='btn-submit'
+      className="btn-submit"
       type="submit"
     >
       Submit
